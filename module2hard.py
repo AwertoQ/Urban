@@ -5,16 +5,11 @@ def random_namber():
     return key_1
 
 key_1 = random_namber()
+key_2 = ''
 
-def pasword():
-    key_2 = ''
-    a = 0
-    for i in range(1, key_1):
-        for j in range(i + 1, key_1):
-            if key_1 == i + j:
-                key_2 += str(i) + str(j)
-                a +=1
-    return key_2
+for i in range(1, key_1):
+    for j in range(i + 1, key_1):
+        if key_1 == i + j:
+            key_2 += str(i) + str(j)
 
-key_2 = pasword()
 print(key_1, '-', key_2)
